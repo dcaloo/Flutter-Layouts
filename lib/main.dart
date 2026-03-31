@@ -43,7 +43,67 @@
 
 // COLUMN
 
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
+ 
+// void main() {
+//   runApp(MyApp());
+// }
+ 
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(title: const Text('Exemplo de Column')),
+//         body: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             Container(color: Colors.red, height: 50, width: 100),
+//             Container(color: Colors.green, height: 50, width: 150),
+//             Container(color: Colors.blue, height: 50, width: 200),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+// ROW
+
+// import 'package:flutter/material.dart';
+ 
+// void main() {
+//   runApp(MyApp());
+// }
+ 
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(title: const Text('Exemplo de Row')),
+//         body: Center(
+//           child: Row(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             crossAxisAlignment: CrossAxisAlignment.center,
+//             children: [
+//               Container(color: Colors.red, height: 50, width: 50),
+//               Container(color: Colors.green, height: 50, width: 50),
+//               Container(color: Colors.blue, height: 50, width: 50),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+ 
+ 
+ // EXPANDED
+
+ import 'package:flutter/material.dart';
  
 void main() {
   runApp(MyApp());
@@ -54,17 +114,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Exemplo de Column')),
+        appBar: AppBar(title: const Text('Exemplo de Expanded')),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(color: Colors.red, height: 50, width: 100),
-            Container(color: Colors.green, height: 50, width: 150),
-            Container(color: Colors.blue, height: 50, width: 200),
+            Expanded(
+              child: Container(color: Colors.red),
+            ),
+            Expanded(
+              child: Container(color: Colors.green),
+            ),
+            Expanded(
+              child: Container(color: Colors.blue),
+            ),
           ],
         ),
       ),
     );
   }
 }
+ 
